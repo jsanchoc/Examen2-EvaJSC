@@ -1,15 +1,18 @@
 def buscarPalabra(objetivo, palabras):
     while True:
+        print()
         nombre = str(input("Buscar nombre: "))
 
-        for i in objetivo:
-            if nombre == i:
-                print(f"{nombre} tiene {palabras[i]} años")
-            elif nombre == exit:
-                print("FIN DEL PROGRAMA")
-                break
-            else:
-                print("El nombre no existe...")
+        if nombre not in objetivo and nombre != "exit":
+            print("el nombre no existe...")
+        elif nombre == "exit":
+            break
+        else:
+            for i in objetivo:
+                if nombre == i:
+                    print(f"{nombre} tiene {palabras[i]} años")
+                
+    print("\nFIN DEL PROGRAMA")
 
 
 
