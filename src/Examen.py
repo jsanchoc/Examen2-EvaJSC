@@ -15,9 +15,9 @@ def buscarPalabra(objetivo, palabras):
     print("\nFIN DEL PROGRAMA")
 
 
-
 def imprimirListaInversa(lista):
-    print()
+    return lista[::-1]
+        
 
 nombres = ["Mengano", "Fulano", "Zutano", "Perantano"]
 edades = {
@@ -27,5 +27,6 @@ edades = {
     "Perantano": 75
 }
 
+print(imprimirListaInversa(nombres))
 buscarPalabra(nombres, edades)
 
